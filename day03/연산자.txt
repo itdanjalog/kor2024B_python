@@ -1,0 +1,24 @@
+연산자
+    1. 문자열 연결 연산자
+        "문자열"+"문자열"
+    2. 산술 연산자
+        + - * ** / // %
+    3. 비교 연산자
+        > >= < <= == !=
+    4. 논리 연산자
+        and or not
+    5. 대입 , 복합대입연산자
+        =
+        += , -= , *= , **= , /= , //= , %=
+    6. 삼항연산자
+        [1]
+        True실행코드 if 조건문 else False실행문
+        [2]중첩
+        True실행코드1 if 조건문1 else True실행코드2 if 조건문2 else False
+
+- 입력함수 : http://itdanja.cafe24.com/study/info/view?bno=371
+
+- 과제
+    과제 페이지 : http://itdanja.cafe24.com/study/info/view?bno=371
+    [ 과제 ] 1 ~ 16문제
+    itdanja@kakao.com 메일로 제출
