@@ -1,3 +1,4 @@
+https://github.com/itdanjalog/tj_2024A_python/blob/master/src/day12/2_%EB%A7%B7%ED%94%8C%EB%A1%AF%EB%A6%BD.py
     데이터의 시각화
         - 데이터 분석의 중요한 부분
         - 그래프 나 차트 형태로 표현
