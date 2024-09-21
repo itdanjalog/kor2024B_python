@@ -1,0 +1,37 @@
+[1] 시각화
+    - 파이썬에서 데이터를 (차트/그래프) 시각화하기
+    - 파이썬의 데이터분석 과 빅데이터 에서 시각화 할때 주로 활용
+    - 파이썬의 시각화 모듈 제공
+    - matplotlib(맷플롭립)
+        * matplotlib 설치 # 프로젝트마다 1번
+        1. import matplotlib.pyplot as plt  # 시각화 객체 가져오기 # py파일마다 1번
+
+        * 다양한 옵션
+        plt.title( '차트제목' )
+        plt.plot( x축데이터 , y축데이터 )       # 선차트
+            plt.plot( y축데이터 )
+            plt.plot( y축데이터 , y축데이터 )
+            plt.plot( y축데이터 , y축데이터 , label='항목이름' )
+            plt.plot( y축데이터 , y축데이터 , label='항목이름' , color = '선색상' , marker ='마커모양' )
+
+        plt.bar(  x축데이터 , y축데이터 )       # 막대차트
+        plt.scatter( )                      # 산점도차트
+        plt.pie( )                          # 원형차트
+
+        plt.xlabel('x축제목')
+        plt.ylabel('y축제목')
+        plt.grid()                          # 눈금 선 표시
+        plt.legend( )                       # 범례 표시 # 항목이름 필요
+
+        2. plt.show() # 시각화(차트) 실행 # 가장 마지막에 코드 작성한다.
+
+* 모듈 설치 하는 방법
+    방법1]
+        1. import matplotlib
+        2. 'matplotlib' 안에 커서를 두면 빨간색 느낌표 클릭
+        3. install package matplotlib 클릭
+        4. 하단의 다운로드 진행사항 보면서 기다리기
+    방법2]
+        1. 상단메뉴 -> [file] -> [setting]
+        2. 사이드메뉴 -> [ project : ~~ ] [ python interpreter ] -> [+]
+        3. 'matplotlib' 검색 후 -> matplotlib 선택 -> [install package ]
