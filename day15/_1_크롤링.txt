@@ -1,0 +1,73 @@
+[1] 크롤링
+    - 인터넷 페이지 에서 자료들을 가져오는 행위
+    - HTML 문서의 자료들을 가져오는 행위
+    - [1] 모듈 설치
+        방법1]
+            1. from bs4 import BeautifulSoup
+            2. 'bs4' 안에 커서를 두면 빨간색 느낌표 클릭
+            3. install beautifulsoup4 클릭
+            4. 하단의 다운로드 진행사항 보면서 기다리기
+        방법2]
+            1. 상단메뉴 -> [file] -> [setting]
+            2. 사이드메뉴 -> [ project : ~~ ] [ python interpreter ] -> [+]
+            3. 'beautifulsoup4' 검색 후 -> beautifulsoup4 선택 -> [install package ]
+
+    - [2] 모듈 가져오기
+        from bs4 import BeautifulSoup
+    - (선택) [3] html 파일 open
+
+    - [3] 크롤링 객체 생성 해서 웹페이지 파싱(번역해서가져오기)
+    htmlObj = BeautifulSoup(  'html파일명' , 'html.parser' )
+
+    - [4] 파싱한 HTML 내 특정 마크업들을 추출하기
+        1. .find( '식별자' )      # HTML 내 지정한 식별자를 찾아서 반환 함수.
+        2. .findAll('식별자')     # HTML 내 지정한 식별자를 찾아서 리스트 반환 함수
+        3. .select_one('식별자')  # HTML 내 지정한 식별자를 칮이사 반함 함수.
+        4. .select('식별자')      # HTML 내 지정한 식별자를 찾아서 리스트 반환 함수
+        5. .text                # 추출한 마크업내 사이 내용물 추출 # 중첩 가능  # 중첩테스트
+        6. .string              # 추출한 마크업내 사이 내용물 추출 # 중첩 불가능 # 단일테스트
+
+    - 지정한 URL(웹주소)의 자료 가져오기
+    1. 모듈 호출 : import urllib.request
+    2. url 오픈 :
+
+
+
+[2] HTML 언어 # Hyper Text Markup Language
+    - 하이퍼 텍스트 마크업 언어 - 파이썬 , 자바 , C언어 와 같은 프로그래밍 언어
+    - 웹 페이지 제작 할때 사용 되는 언어
+    - Hyper Text : 이동 가능한 텍스트(문서)
+    - Markup : 마크업
+        - 정해진 문법/약속 , 브라우저(크롬,엣지) 가 기능을 수행 할수 있게 미리 정의한 문법
+        - 마크업의 요소 구성 , < 꺾은괄호 를 이용한 문법 구성한다.
+        - 마크업 형태 :  <마크업이름> 내용물 </마크업>
+                        <마크업시작> ~~~~~ </마크업닫기>
+        - 마크업 종류 :
+            [ 기본 마크업 ]
+                1. <html> </html>   : 전체 HTML 문법를 감싸는 마크업
+                2. <head> </head>   : HTML의 속성을 설정하는 마크업
+                    3. <meta charset="UTF-8"> : HTML 인코딩 타입 설정 ( UTF-8한글뜻)
+                    4. <title> </title>       : HTML 제목
+                3. <body> </body>   : HTML 본문
+
+            [ 자주 사용하는 마크업 ]
+                1. <h1> </h1>       : 제목을 표기 하는 마크업 #<h1> ~ <h6>
+                2. <p> </p>         : 문단 마크업
+                3. <div> </div>     : 레이아웃 구역 마크업 # 한줄 차지
+                4. <span> </span>   : 레이아웃 구역 마크업 # 한줄 포함
+                5. <ul> </ul>       : ul : unoderlist(순번 글머리없는)목록
+                6. <ol> </ol>       : ol : oderlist(순번 글머리)목록
+                    <li> </li>      : li : listitem 항목 # ul과 ol 마크업 안에 들어가는 항목
+                7. <table> </table> : 테이블 마크업
+                    <tr> </tr>      : 테이블 행
+                    <th> </th>      : 테이블 제목
+                    <td> </td>      : 테이블 데이터
+        - 마크업 식별 속성 # 식별자
+            1. 마크업이름    # 마크업이름은 중복 많기 때문에 식별용으로 사용하기 힘들다.
+            2. class 속성   # 마크업의 추가적인 식별이름을 정의 # 복수 가능 # 여러개
+                .class명
+            3. id 속성      # 마크업의 추가적인 식별이름을 정의 # 복수 불가능
+                #id명
+    - HTML 파일 만들기
+        1. 패키지/폴더를 오른쪽 클릭
+        2. new -> HTML file -> 웹페이지1.html
