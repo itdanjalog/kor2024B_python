@@ -1,0 +1,30 @@
+웹 크롤링이란?
+    - 웹페이지 정보를 수집하는 과정
+    - 파이썬에서 웹페이지 데이터를 수집
+    - 필요 기술 : 1.HTML 2.PYTHON(BeautifulSoup)
+    - 주의할점 : URL/robots.txt
+        - Disallow : 해당 url 크롤링 금지
+
+[1] HTML : 웹 페이지(문서) 작성 언어
+    - 마크업( <꺾은괄호 ) 언어
+    - 형태 : <마크업이름> 내용물  </마크업이름>
+    - 마크업 종류
+    - 마크업 식별 # 식별자 # 지정한 마크업 구분
+        1. 마크업이름
+        2. class 속성
+        3. id 속성
+
+[2] 크롤링 : 파이썬에서 크롤링 관련 모듈(미리 만들어진 함수/객체) 제공
+    1. 크롤링 모듈 : BeautifulSoup #
+    2. 사용법
+        1. from bs4 import BeautifulSoup # 모듈 호출
+            # 파이썬에서 URL 요청하고 성공시 HTML데이터를 응답받는 과정
+            1. import urllib.request # 모듈 호출
+            2. response = urllib.request.urlopen('크롤링할URL') # 지정한 URL 요청 성공시 응답 데이터를 변수에 저장
+            3. htmlData = response.read() # 응답받은 데이터를 읽어서 변수에 저장
+        2. soup = BeautifulSoup 객체 생성 # BeautifulSoup( htmlData , 'html.parser')
+        3. 특정 마크업 추출
+            1. .select_one('html식별자')       # 지정한 식별자를 여러개 호출하기 # 리스트  반환
+            2. .select('html식별자')           # 지정한 식별자를 1개 호출하기 # 문자열 반환
+            3. .text                            # 마크업내 내용물 추출 # 하위 마크업 가능
+            4. .string                          # 마크업내 내용물 추출 # 하위 마크업 불가능
