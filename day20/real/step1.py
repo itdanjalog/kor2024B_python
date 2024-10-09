@@ -44,7 +44,7 @@ def seqSearchDup( list , findValue ) :
     return posList
 
 # 코드 실행
-dataList = [ 188 , 162 , 168 , 120 , 50 , 150 , 177 , 105 ] # 샘플 데이터 목록( 150중복 )
+dataList = [ 188 , 162 , 168 , 120 , 50 , 150 , 177 , 105 , 150  ] # 샘플 데이터 목록( 150중복 )
 # 검색할 데이터
 findValue = int( input( '검색할 데이터 : ') )
 # 함수 호출/사용
