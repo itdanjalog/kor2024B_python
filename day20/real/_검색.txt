@@ -31,3 +31,7 @@
 각 노드가 두 개의 자식 노드를 가지며 왼쪽 자식 노드는 부모 노드보다 작고,
 오른쪽 자식 노드는 부모 노드보다 큽니다.
 - 예를 들어, 트리 구조를 사용해 디렉토리에서 파일을 탐색하는 방법입니다.
+
+
+https://github.com/itdanja/week_python_202208
+https://github.com/itdanja/week_python_202206
