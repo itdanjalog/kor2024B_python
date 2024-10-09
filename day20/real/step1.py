@@ -29,7 +29,7 @@ else :
     print( findValue , '의 검색 결과는 ', pos ,' 위치에 존재 합니다.')
 
 
-# [2-2:중복허용 ] 순차 검색 함수 정의
+#  순차 검색 함수 정의 [2-2:중복허용 ]
 def seqSearchDup( list , findValue ) :
     posList = [ ] # * 검색된 인덱스가 여러개(중복) 저장하기 위한 리스트 선언
 

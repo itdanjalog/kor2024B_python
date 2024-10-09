@@ -25,9 +25,6 @@ def binSearch( list , findValue ) :
     # while 반복문 종료되고 함수 종료
     return pos
 
-
-
-
 # 코드 실행
 dataList = [188, 162, 168, 120, 50, 150, 177, 105]  # 샘플 데이터
 # 리스트 정렬

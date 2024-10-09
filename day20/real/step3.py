@@ -27,17 +27,6 @@ M = int( input() ) # 3. 검색할 M 의 자연수 입력
 print( solution1( dataList , M ) ) #4. N개의 난수 목록 중에 M이 존재 하면 1 출력 하고 존재 하지 않으면  0 출력
 '''
 
-
-
-
-
-
-
-
-
-
-
-
 # 실습2 : 이진 검색
 def solution2( list , fdata  ) : # 매개변수 : 목록 , 찾을대상
     # 이진 검색 구현
